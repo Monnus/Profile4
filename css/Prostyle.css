@@ -6,7 +6,22 @@ backround-color: rgba(0,0,0,0.4);
 /*font-family: 'Roboto Condensed', sans-serif;*/
 body{
   background-color:white;
+  background-image: url("M-20200904-WA0001-Copy.jpg");
+  background-size:cover;
+  width:100%;
+  padding:0px;
+  margin:0px;
   background-repeat: no-repeat;
+}
+
+body::before{
+  position: absolute;
+  content:"";
+  background-color:rgba(0,0,0,0.4);
+  padding: 0px;
+  margin: 0px;
+  height:100vh;
+  width:100vw;
 }
 .img{
   width:300px;
@@ -14,8 +29,6 @@ body{
   border-radius: 20%;
   padding:0px 5px;
   margin-right:50px;
-
-
 }
 .title{
   position:fixed;
@@ -23,18 +36,20 @@ body{
 width:100%;
 height: 100px;
 /*color: #d9d9d9;*/
-  background-color:rgb(255, 102, 0);
+  background-color:rgba(0, 0, 0,0.4);
+  border-bottom:0.1px solid rgba(255,255,255,0.2);
   display:flex;
   justify-content: center;
+
 }
  .title a{
-  color:      #636363;
+  color:white;
   text-decoration: none;
 }
 
 
 .title .item1{
-
+    display:flex;
   font-size:23px;
 padding:12px 12px;
   width:100px;
