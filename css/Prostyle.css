@@ -5,121 +5,276 @@ backround-color: rgba(0,0,0,0.4);
 /*font-family: 'Roboto Condensed', sans-serif;
 <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
 font-family: 'Kite One', sans-serif;*/
+*{
+margin:0px;
+padding:0px;
+}
 body{
- background-color:white;
- background-image: url("M-20200904-WA0001-Copy.jpg");
- background-size:cover;
- width:100%;
- padding:0px;
- margin:0px;
- background-repeat: no-repeat;
+width: 100%;
+height: 100%;
+background: #f0f0f5;
+font-size: 14pt;
+}
+#backround1{
+
+position: absolute;
+width: 100%;
+height: 286px;
+left: 0px;
+top: 0px;
+
+background: #1A53FF;
+}
+#name{
+  position: relative;
+width: 60%;
+height: 40px;
+left: 45px;
+top: 50px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 25pt;
+line-height: 31px;
+
+color: #FFFFFF;
+}
+#subtitle{
+  position: relative;
+width: 245px;
+height: 61px;
+left: 45px;
+top: 106px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 13pt;
+line-height: 15px;
+
+color: #FFFFFF;
 }
 
-/*body::before{
- position: absolute;
- content:"";
- background-color:rgba(0,0,0,0.4);
- padding: 0px;
- margin: 0px;
- height:100vh;
- width:100vw;
-}*/
+#download{
+  position: absolute;
+width: 109px;
+height: 34px;
+left: 64px;
+top: 214px;
 
-
-.title{
- position:relative;
-width:100%;
-height: 126px;
-/*color: #d9d9d9;*/
- background-color:rgba(0, 0, 0,0.3);
- border-bottom:3px solid rgba(255,255,255,0.2);
-text-align: center;
- font-family: 'Kufam' ,cursive;
-;
-}
-.icons{
- display:flex;
- justify-content:center;
- overflow: hidden;
+background: #FFFFFF;
 }
 
-.icons a{
-  float:left;
-text-align:center;
-padding:0px 16px;
-text-decoration: none;
-font-size:20px;
-color:white;
- font-family: 'Kufam' ,cursive;
-}
-.icons a.active{
-  background-color:skyblue;
-}
-.title a{
- color:white;
- text-decoration: none
-}
+#picture{
+position:absolute;
+width: 246px;
+height: 80%;
+right: 50px;
+top:20px;
 
-.icons a:hover{
-  background-color: #ddd;
-  color:white;
+background: url(M-20200904-WA0001-Copy.jpg);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+/*border-radius: 0px 66.5px 66.5px 66.5px;*/
 }
-
-
+#circle{
+  position: absolute;
+width: 55px;
+height: 53px;
+left: 50%;
+top: 255px;
+border-radius: 100%;
+background: #FFFFFF;
+}
 #main{
- position: relative;
- width:100%;
- height:100%;
-background-color:rgba(0,0,0,0.7);
- color:white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:20em;
+}
+#about-me{
+  position:absolute;
+  display:block;
+  height: 200px;
+width: 320px;
+right: 0px;
+top: 51px;
+border-radius: nullpx;
+}
 
+#picture2{
+position: absolute;
+display: block;
+width: 351px;
+height: 315px;
+left: 22px;
+top:50px;
+}
 
+#skills{
+  position: absolute;
+  background: gray;
+width: 100%;
+height: 383px;
+left: 19px;
+top: 500px;
+
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows: auto auto auto;
+}
+
+#heading{
+  grid-column: 1;
+  grid-row: 1;
+}
+#ADOBE{
+  grid-column: 1;
+  grid-row: 2;
+}
+.block1{
+  width: 50%;
+  height: 30px;
+  background: #1A53FF;
+}
+
+#HTML{
+  grid-column:2;
+  grid-row:2;
+}
+.block3{
+  width: 50%;
+  height: 30px;
+  background: #1A53FF;
+}
+#CSS{
+  grid-column: 1;
+  grid-row: 3;
+}
+.block5{
+  width: 50%;
+  height: 30px;
+  background:white;
+}
+.block6{
+  width: 90%;
+  height: 30px;
+  background:  #1A53FF;
+}
+#JAVA{
+  grid-column: 2;
+  grid-row: 3;
+}
+.block7{
+  width: 50%;
+  height: 30px;
+  background:  white;
+}
+.block8{
+  width: 10%;
+  height: 30px;
+  background:#1A53FF;
+}
+
+#My-projects{
+  position: absolute;
+  background:;
+width: 100%;
+height: 500px;
+left: 20px;
+top: 898px;
+
+display: grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: auto auto;
+grid-gap:10px;
+grid
+}
+.Pro-pics{
+  width:100%;
+  height: 300px;
+}
+#item1{
+  grid-column: 2;
+  grid-row:1;
+  text-align: center;
+}
+#item2{
+  background:;
+  grid-column: 1;
+  grid-row:2;
+}
+#item3{
+  background: ;
+  grid-column: 2;
+  grid-row:2;
+}
+#item4{
+  background: ;
+  grid-column: 3;
+  grid-row:2;
+}
+
+#footer{
+position: absolute;
+width: 100%;
+height: 384px;
+left: 20px;
+top:97em;
+background:;
+display:grid;
+grid-template-columns: auto 50px auto;
+grid-row: auto auto;
+grid-gap: 10px;
+}
+
+#DL{
+  grid-column: 1;
+  grid-row: 2;
+background:;
+width:150px;
+height:300px;
 display:flex;
 flex-direction: column;
-align-items:;
-}
-.-main{
- font-size:15pt;
- width:50%;
- height:100%;
- font-family: 'Kite One', sans-serif;
- border-right:1px solid rgba(255,255,255,0.3);
-}
-
-.-main h2{
- color:white;
- font-family: 'Kufam' ,cursive;
-text-align:;
-}
 
 }
-.footer{
- background:;
+.C-item{
+  margin:10px 0px;
+}
+#Line{
+  grid-column: 2;
+  grid-row: 2;
+  background: gray;
+  width: 10px;
+height: 300px;
 }
 #form{
- margin-top:;
- display: flex;
- flex-direction: column;
- width: 40%;
- height: 100%;
-
+  grid-column: 3;
+  grid-row:2 ;
+    background: ;
+    width: 100%;
+    height: 100%;
 }
-.form-input{
- border:none;
- border-bottom: 1px solid;
- outline:none;
- font-family: 'Lato', sans-serif;
- color:black;
- /*background:#d9d9d9;*/
- padding-top: 11px;
- margin: 5px 5px;
- font-size:12pt;
-
+#form input[name=Name]{
+  margin: 50px 0px 10px 0px;
+  width: 30em;
+  height: 40px;
+    outline-color:#32a1ce;
 }
-.button{
-  outline:none;
-  color:black;
-  display:inline-block;
-  width:10%;
-background:white;
+#form input[name=Email]{
+  margin: 5px 0px 10px 0px;
+  width: 30em;
+  height: 40px;
+    outline-color:#32a1ce;
+}
+#form textarea{
+  resize:none;
+  width:27em;
+  font-size:11pt;
+    outline-color:#32a1ce;
+}
+#logo{
+  grid-column: 2;
+  grid-row: 3;
+  width: 300px;
 }
